@@ -1,2 +1,2 @@
 # SampleSmartContractCall
- This projects demonstrate idea to implement the smart contract call in ASP.NET Core application
+ This projects demonstrate sample example to implement the smart contract call in ASP.NET Core application
