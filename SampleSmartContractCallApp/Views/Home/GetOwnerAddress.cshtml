@@ -1,0 +1,45 @@
+﻿@model SampleSmartContractCallApp.Models.GetOwnerModel
+
+@{
+    ViewData["Title"] = "GetOwnerAddress";
+}
+<script type="text/javascript">
+    function getOwnerAddress() {
+        var senderAddress = $("#senderAddress").val()
+        console.log(senderAddress);
+        $.ajax({
+            type: 'POST',
+             url: '/contractCall/getowneraddress',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(senderAddress),
+            success: function (result) {
+                alert('success receive the Data' + result);
+                console.log(result);
+            },
+            error: function () {
+                alert('Failed to receive the Data');
+                console.log('Failed ');
+            }
+        })
+    }
+</script>
+<h4>Get Owner Address</h4>
+<div class="row">
+    <div class="col-md-4">
+        <form id="studenteForm" novalidate class="needs-validation">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SenderAddress" class="control-label"></label>
+                <input asp-for="SenderAddress" class="form-control" id="senderAddress" required />
+                <span asp-validation-for="SenderAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" onclick="getOwnerAddress()">Get Owner </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
