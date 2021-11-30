@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bHguL1gcNEdKcapBTtAHD5KbKtoRVvufjpxZu47BTzHyWPf8OIeiHWz6LCmkNLlPTHMi7f0gKc6wbz2AQ4ZFuw==",
+  "dgSpecHash": "Rt/IQ1+NvymJFN70PDOGgdpA+IqDgRIOnOFgk/eanp6EIl6JS5/sAjK/XF5/9NS9cjHRVo3PGLtLM49htz0q2Q==",
   "success": true,
-  "projectFilePath": "E:\\Extras\\Sample Projects\\SmapleContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj",
+  "projectFilePath": "E:\\Extras\\SampleProjectGitRepo\\SampleSmartContractCall\\SampleSmartContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\space\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\space\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

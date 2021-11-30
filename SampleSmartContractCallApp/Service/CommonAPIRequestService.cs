@@ -14,13 +14,8 @@ namespace SampleSmartContractCallApp.Service
 {
     public class CommonAPIRequestService
     {
-        private readonly ILogger<APIRequestResponse> logger;
-        public CommonAPIRequestService()
-        {
-
-        }
         public async Task<APIRequestResponse> GetRequestAsync(string apiendpoint, string path, string query = null)
-        {           
+        {
             var restClient = new RestClient(BuildUri(apiendpoint, path, query));
             var restRequest = new RestRequest(Method.GET);
             IRestResponse restResponse = await restClient.ExecuteAsync(restRequest).ConfigureAwait(false);

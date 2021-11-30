@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Extras\\Sample Projects\\SmapleContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj": {}
+    "E:\\Extras\\SampleProjectGitRepo\\SampleSmartContractCall\\SampleSmartContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj": {}
   },
   "projects": {
-    "E:\\Extras\\Sample Projects\\SmapleContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj": {
+    "E:\\Extras\\SampleProjectGitRepo\\SampleSmartContractCall\\SampleSmartContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Extras\\Sample Projects\\SmapleContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj",
+        "projectUniqueName": "E:\\Extras\\SampleProjectGitRepo\\SampleSmartContractCall\\SampleSmartContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj",
         "projectName": "SampleSmartContractCallApp",
-        "projectPath": "E:\\Extras\\Sample Projects\\SmapleContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj",
+        "projectPath": "E:\\Extras\\SampleProjectGitRepo\\SampleSmartContractCall\\SampleSmartContractCall\\SampleSmartContractCallApp\\SampleSmartContractCallApp.csproj",
         "packagesPath": "C:\\Users\\space\\.nuget\\packages\\",
-        "outputPath": "E:\\Extras\\Sample Projects\\SmapleContractCall\\SampleSmartContractCallApp\\obj\\",
+        "outputPath": "E:\\Extras\\SampleProjectGitRepo\\SampleSmartContractCall\\SampleSmartContractCall\\SampleSmartContractCallApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\space\\AppData\\Roaming\\NuGet\\NuGet.Config",

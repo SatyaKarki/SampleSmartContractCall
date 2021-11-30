@@ -10,16 +10,16 @@ namespace SampleSmartContractCallApp.Service
 {
     public class SmartContractService
     {
-        private readonly CommonAPIRequestService commonAPIRequestService;
-        private string defaultEndPoint="http://localhost:38223";
+        private readonly CommonAPIRequestService _commonAPIRequestService;
+        private string _defaultEndPoint="http://localhost:38223";
+        private string _contractAddress= "PNhr8Qo9tbmVXyzz38xnBVm9oceJqzD8Q5";
         public SmartContractService(CommonAPIRequestService commonAPIRequestService)
         {
-            this.commonAPIRequestService = commonAPIRequestService;
+            _commonAPIRequestService = commonAPIRequestService;
         }    
         
         public async Task<APIRequestResponse> GetOwnerSmartContractCall(string senderAddress)
         {
-            string ownerContractAddress = "";
             try
             {                
                 var smartContractLocalCall = new SmartContractLocalCallModel
@@ -28,21 +28,20 @@ namespace SampleSmartContractCallApp.Service
                     GasLimit = 50000,
                     Amount = 0,
                     MethodName = "GetOwner",
-                    ContractAddress = "PNhr8Qo9tbmVXyzz38xnBVm9oceJqzD8Q5",
+                    ContractAddress =_contractAddress,
                     Sender =senderAddress,
                     Parameters =null, 
                     };
 
-                    APIRequestResponse response = await commonAPIRequestService.PostRequestAsync(defaultEndPoint, "/api/SmartContracts/local-call", smartContractLocalCall).ConfigureAwait(false);
+                    APIRequestResponse response = await _commonAPIRequestService.PostRequestAsync(_defaultEndPoint, "/api/SmartContracts/local-call", smartContractLocalCall).ConfigureAwait(false);
 
                     return response;                
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-              
+                throw;
             }
 
-            return null;
         }
 
     }
